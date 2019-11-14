@@ -7,8 +7,10 @@ public class Util {
     public static <T> void printCollection(Collection<T> c)
     {
         Iterator<T> iter = c.iterator();
+        StringBuilder sb = new StringBuilder();
         while (iter.hasNext()){
-            System.out.println(iter.next());
+            sb.append(iter.next() + ", ");
         }
+        System.out.println(sb.toString());
     }
 }
