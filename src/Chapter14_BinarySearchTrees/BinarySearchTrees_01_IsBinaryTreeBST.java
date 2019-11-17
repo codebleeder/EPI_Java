@@ -21,6 +21,20 @@ public class BinarySearchTrees_01_IsBinaryTreeBST {
                 areKeysInRange(root.right, root.data, maxValue);
     }
 
+    private static boolean areKeysInRangeBST(BSTNode<Integer> root, int minValue, int maxValue) {
+        if (root == null){
+            return true;
+        }
+        else if (root.data < minValue || root.data > maxValue){
+            return false;
+        }
+        return areKeysInRangeBST(root.left, minValue, root.data) &&
+                areKeysInRangeBST(root.right, root.data, maxValue);
+    }
+
+    public static boolean isValidBST(BSTNode<Integer> root){
+        return areKeysInRangeBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
 
     public static void test(){
         BinaryTreeNode<Integer> root1 = new BinaryTreeNode<>(45);
