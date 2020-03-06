@@ -25,7 +25,6 @@ public class BinarySearchTrees_00_SearchBST {
             else {
                 System.out.println(String.format("search number: %d  result: null", arr[i]));
             }
-
         }
     }
 }
