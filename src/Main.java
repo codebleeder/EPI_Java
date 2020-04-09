@@ -1,10 +1,9 @@
-import Chapter14_BinarySearchTrees.BinarySearchTrees_12_RangeLookupInBST;
-import Chapter14_BinarySearchTrees.BinarySearchTrees_13_ClientsCreditsInfo;
+import Chapter05_Arrays.Arrays_11_NextPermutation;
+import Chapter15_Recursion.*;
+import Chapter15_Recursion.Recursion_04_GeneratePowerSet;
 
 public class Main {
-
     public static void main(String[] args) {
-
-        BinarySearchTrees_13_ClientsCreditsInfo.test();
+        Recursion_07_PalindromeDecompositions.test();
     }
 }
