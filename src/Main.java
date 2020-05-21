@@ -4,6 +4,6 @@ import Chapter15_Recursion.Recursion_04_GeneratePowerSet;
 
 public class Main {
     public static void main(String[] args) {
-        Recursion_07_PalindromeDecompositions.test();
+        Recursion_10_GrayCode.test();
     }
 }

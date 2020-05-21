@@ -17,7 +17,7 @@ public class Recursion_07_PalindromeDecompositions {
             result.add(new ArrayList<>(partialPartition));
             return;
         }
-        for (int i = offset + 1; i < input.length(); i++){
+        for (int i = offset + 1; i <= input.length(); i++){
             String prefix = input.substring(offset, i);
             if (isPalindrome(prefix)){
                 partialPartition.add(prefix);
