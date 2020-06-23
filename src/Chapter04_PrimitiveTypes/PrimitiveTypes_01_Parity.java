@@ -37,10 +37,18 @@ public class PrimitiveTypes_01_Parity {
 
     }
 
+    public static short parity4(long x) {
+        int shift = 32;
+        while (shift > 0) {
+            x ^= x >>> shift;
+            shift /= 2;
+        }
+        return (short) (x & 0x1);
+    }
     public static void test() {
         List<Integer> nums = new ArrayList<>(Arrays.asList(5, 2, 10, 7, 234));
         for (int num : nums) {
-            String str = String.format("parity of %s = %d", Integer.toBinaryString(num), parity3((short) num));
+            String str = String.format("parity of %s = %d", Integer.toBinaryString(num), parity4((long) num));
             System.out.println(str);
         }
     }
