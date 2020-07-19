@@ -1,4 +1,4 @@
-package Chapter17_GreedyAlgorithms;
+package Chapter17_GreedyAlgorithms_and_Invariants;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,8 +1,7 @@
-package Chapter17_GreedyAlgorithms;
+package Chapter17_GreedyAlgorithms_and_Invariants;
 
 import Util.Util;
 
-import javax.naming.InsufficientResourcesException;
 import java.util.*;
 
 public class Greedy_03_FindMinimumVisits {
