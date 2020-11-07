@@ -29,4 +29,8 @@ public class ListNode<T> {
         }
         return dummy.next;
     }
+
+    public static void printListNode(ListNode<Integer> n) {
+        System.out.println("-> (" + n.data + ") -> " + (n.next == null ? "null" : n.next.data.toString()));
+    }
 }
