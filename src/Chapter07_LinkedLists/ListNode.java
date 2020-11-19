@@ -34,4 +34,10 @@ public class ListNode<T> {
         System.out.println("-> (" + n.data + ") -> " + (n.next == null ? "null" : n.next.data.toString()));
     }
 
+    public static ListNode<Integer> traverse(ListNode<Integer> head, int target) {
+        while (head.data != target) {
+            head = head.next;
+        }
+        return head;
+    }
 }
