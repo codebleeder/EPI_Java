@@ -1,5 +1,7 @@
 package Chapter07_LinkedLists;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListNode<T> {
@@ -39,5 +41,19 @@ public class ListNode<T> {
             head = head.next;
         }
         return head;
+    }
+
+    public static int getLength(ListNode<Integer> head) {
+        int len = 0;
+        while (head != null) {
+            head = head.next;
+            ++len;
+        }
+        return len;
+    }
+
+    public static void main(String[] args) {
+        ListNode<Integer> head = ListNode.generateLinkedList(new ArrayList<>(Arrays.asList(1, 2, 3, 4)));
+        System.out.println("length = " + getLength(head));
     }
 }
