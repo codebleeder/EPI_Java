@@ -17,6 +17,13 @@ public class BinaryTreeNode<T> {
         return this.left == null && this.right == null;
     }
 
+    public static BinaryTreeNode<Integer> getNode(BinaryTreeNode<Integer> root, int x) {
+        if (root == null) return null;
+        if (root.data == x) return root;
+        BinaryTreeNode<Integer> left = getNode(root.left, x);
+        BinaryTreeNode<Integer> right = getNode(root.right, x);
+        return left != null ? left : right;
+    }
     public static BinaryTreeNode<Integer> buildExampleTree() {
         BinaryTreeNode<Integer> a = new BinaryTreeNode<>(314);
         BinaryTreeNode<Integer> b = new BinaryTreeNode<>(6);
