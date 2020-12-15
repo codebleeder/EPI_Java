@@ -2,7 +2,7 @@ package Chapter09_BinaryTrees;
 
 public class BinaryTreeNode<T> {
     public T data;
-    public BinaryTreeNode<T> left, right;
+    public BinaryTreeNode<T> left, right, parent;
     public int size;
 
     public BinaryTreeNode() {
@@ -77,6 +77,22 @@ public class BinaryTreeNode<T> {
         m.size = 1;
         n.size = 1;
         p.size = 1;
+
+        b.parent = a;
+        c.parent = b;
+        f.parent = b;
+        g.parent = f;
+        i.parent = a;
+        j.parent = i;
+        k.parent = j;
+        l.parent = k;
+        o.parent = i;
+        p.parent = o;
+        m.parent = l;
+        n.parent = k;
+        h.parent = g;
+        d.parent = c;
+        e.parent = c;
 
         return a;
     }
