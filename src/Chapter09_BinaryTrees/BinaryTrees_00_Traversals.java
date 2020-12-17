@@ -28,7 +28,7 @@ public class BinaryTrees_00_Traversals {
     public static void main(String[] args) {
         BinaryTreeNode<Integer> root = BinaryTreeNode.buildExampleTree();
         System.out.println("inorder: ");
-        //inorder(root);
+        inorder(root);
 
         System.out.println("\npreorder: ");
         preorder(root);
