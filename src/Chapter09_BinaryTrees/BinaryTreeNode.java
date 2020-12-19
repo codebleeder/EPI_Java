@@ -2,7 +2,7 @@ package Chapter09_BinaryTrees;
 
 public class BinaryTreeNode<T> {
     public T data;
-    public BinaryTreeNode<T> left, right, parent;
+    public BinaryTreeNode<T> left, right, parent, levelNext;
     public int size;
 
     public BinaryTreeNode() {
@@ -129,6 +129,41 @@ public class BinaryTreeNode<T> {
         k.right = o;
         l.left = m;
         l.right = n;
+        return a;
+    }
+
+    public static BinaryTreeNode<Integer> buildPerfectTree() {
+        BinaryTreeNode<Integer> a = new BinaryTreeNode<>(1);
+        BinaryTreeNode<Integer> b = new BinaryTreeNode<>(2);
+        BinaryTreeNode<Integer> c = new BinaryTreeNode<>(3);
+        BinaryTreeNode<Integer> d = new BinaryTreeNode<>(4);
+        BinaryTreeNode<Integer> e = new BinaryTreeNode<>(5);
+        BinaryTreeNode<Integer> f = new BinaryTreeNode<>(6);
+        BinaryTreeNode<Integer> g = new BinaryTreeNode<>(7);
+        BinaryTreeNode<Integer> h = new BinaryTreeNode<>(8);
+        BinaryTreeNode<Integer> i = new BinaryTreeNode<>(9);
+        BinaryTreeNode<Integer> j = new BinaryTreeNode<>(10);
+        BinaryTreeNode<Integer> k = new BinaryTreeNode<>(11);
+        BinaryTreeNode<Integer> l = new BinaryTreeNode<>(12);
+        BinaryTreeNode<Integer> m = new BinaryTreeNode<>(13);
+        BinaryTreeNode<Integer> n = new BinaryTreeNode<>(14);
+        BinaryTreeNode<Integer> o = new BinaryTreeNode<>(15);
+
+        a.left = b;
+        a.right = i;
+        b.left = c;
+        b.right = f;
+        c.left = d;
+        c.right = e;
+        f.left = g;
+        f.right = h;
+        i.left = j;
+        i.right = m;
+        j.left = k;
+        j.right = l;
+        m.left = n;
+        m.right = o;
+
         return a;
     }
 }
