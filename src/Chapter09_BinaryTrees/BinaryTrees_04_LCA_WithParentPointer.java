@@ -86,4 +86,5 @@ public class BinaryTrees_04_LCA_WithParentPointer {
         System.out.println("LCA(m,p) = " + LCA(m, p).data);
         System.out.println("LCA(h,m) = " + LCA(h, m).data);
     }
+
 }
